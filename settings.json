@@ -1,0 +1,108 @@
+// VS Code Professional Setup — Nazmus Sakib
+{
+  // 📁 File Management
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+
+  // 🖥 Interface Preferences
+  "window.zoomLevel": 2,
+  "workbench.sideBar.location": "left",
+  "workbench.colorTheme": "Dracula",            // Extension: Dracula Official
+  "workbench.iconTheme": "vscode-icons",        // Extension: vscode-icons
+
+  // ✍️ Editor Customization
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Fira Code, Operator Mono",
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "expand",
+  "editor.linkedEditing": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Extension: Prettier
+
+  // 🎨 Syntax Styling
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+
+  // 🛠 Code Actions
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.organizeImports": true
+  },
+
+  // 📏 Language Specific Formatting
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[html]": {
+    "editor.foldingStrategy": "indentation"
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+
+  // 🌐 Web Development
+  "html.autoClosingTags": true,
+  "html.validate.scripts": true,
+  "html.validate.styles": true,
+  "html.suggest.angular1": true,
+  "html.suggest.ionic": true,
+  "html.suggest.html5": true,
+
+  // 🔍 ESLint Integration
+  "eslint.alwaysShowStatus": true,
+
+  // 🚀 Terminal Configuration
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
+  "terminal.integrated.confirmOnExit": "always",
+  "terminal.integrated.shell.linux": "/bin/bash",
+
+  // ⚙️ C/C++ Configuration
+  "C_Cpp.default.compilerPath": "${default}",
+  "C_Cpp.default.browse.path": [],
+  "C_Cpp.updateChannel": "Insiders",
+
+  // 📗 Notebook Experience
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+
+  // 🧠 JavaScript Support
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // 🔧 Code Runner Settings
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true,
+
+  // 🐍 Django
+  "django.snippets.exclude": ["cms", "wagtail"]
+}
